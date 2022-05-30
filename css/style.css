@@ -1,0 +1,211 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Rubik",sans-serif;
+}
+
+body {
+	background-color: #fff5e7;
+}
+
+.content {
+	width: 85vw;
+	min-height: 50vmin;
+	padding: 50px 30px;
+	background-color: #ffffff;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	border-radius: 10px;
+	box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+	display: grid;
+	grid-template-columns: 5fr 7fr;
+}
+
+.editor {
+	min-height: 35vmin;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	grid-gap: 20px:;
+}
+
+.editor label {
+	font-size: 2.8vmin;
+	color: #2a292a;
+	font-weight: 400;
+}
+
+.editor input[type="range"] {
+	display: block;
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+}
+
+.flip-buttons {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;	
+}
+
+.flip-buttons .flip-option {
+	margin-top: 10px; 
+}
+
+.editionresult {
+    position: relative;	
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.editionresult img{
+	display: block;
+	position: relative;
+	max-width: calc(100% - 4vmin);
+	max-height: 45vmin;
+	margin: auto;
+}
+
+.image-container {
+	display: none;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.editionresult label {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 220px;
+	background-color: #ff4a73;
+	color: #ffffff;
+	text-align: center;
+	padding: 16px 0;
+	border-radius: 5px;
+	font-size: 2.8vmin;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.inicio {
+	display: block;
+	position: relative;
+	max-width: calc(100% - 4vmin);
+	max-height: 45vmin;
+	margin: auto;
+}
+
+.content-inicio {
+	/*width: 85vw;*/
+	min-height: 50vmin;
+	padding: 50px 30px;
+	background-color: #ffffff;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	border-radius: 10px;
+	box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+	display: grid;
+}
+
+.divbtn {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	border: none;
+	background-color: #ff4a73;
+	font-size: 18px;
+	border: 1px solid #ff4a73;
+	padding: 15px 30px;
+	border-radius: 50px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #fff;
+	margin: 30px 0;
+	transition: .5s;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: #ff4a73;
+}
+
+.divbtn2 {
+	display: flex;
+	justify-content: center;
+}
+
+.btn2 {
+	border: none;
+	background-color: transparent;
+	font-size: 18px;
+	border: 1px solid #ff4a73;
+	padding: 15px 30px;
+	border-radius: 50px;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ff4a73;
+	margin: 30px 0;
+	transition: .5s;
+	text-decoration: none;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-gap: 20px;
+	position: relative;
+}
+
+.btn2:hover {
+	background-color: #ff4a73;
+	color: #fff;
+}
+
+.titulo {
+	text-align: center;
+	font-family: Baskeville;
+	padding-bottom: 20px;
+}
+
+input {
+	color: #ff4a73;
+}
+
+@media screen and (max-width: 620px) {
+	.content {
+		width: 95vmin;
+		grid-template-columns: 1fr;
+		padding: 20px 20px;
+		grid-gap: 10px;
+	}
+
+	.editor {
+		grid-row: 2;
+	}
+
+	.flip-buttons {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.flip-buttons .flip-option {
+		margin-top: 0;	
+	}
+
+	.content-inicio {
+		width: 95vmin;
+		grid-template-columns: 1fr;
+		padding: 20px 20px;
+	
+}
